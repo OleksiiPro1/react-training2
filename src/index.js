@@ -1,13 +1,18 @@
 import './index.css';
 import chalk from 'chalk';
+import randomColor from 'randomcolor';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // Math.floor(Math.random()*16777215).toString(16);
-const color = '#' + Math.floor(Math.random()*16777215).toString(16);
-
+// const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+const color = randomColor();
+// ({
+//   luminosity: 'light',
+//   hue: 'blue',
+// });
 console.log(chalk.hex(color).bold('##########################'));
 console.log(chalk.hex(color).bold('##########################'));
 console.log(chalk.hex(color).bold('##########################'));
