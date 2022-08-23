@@ -1,8 +1,20 @@
+import './index.css';
+import chalk from 'chalk';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// Math.floor(Math.random()*16777215).toString(16);
+const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+console.log(chalk.hex(color).bold('##########################'));
+console.log(chalk.hex(color).bold('##########################'));
+console.log(chalk.hex(color).bold('##########################'));
+console.log(chalk.hex(color).bold(`######   ${color}    #####`));
+console.log(chalk.hex(color).bold('##########################'));
+console.log(chalk.hex(color).bold('##########################'));
+console.log(chalk.hex(color).bold('##########################'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
